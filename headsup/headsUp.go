@@ -1,4 +1,4 @@
-package headsUp
+package headsup
 
 import "github.com/Hunrik/poker-player-goglig/leanpoker"
 
@@ -11,7 +11,7 @@ func getActivePlayers(players *[]leanpoker.Player) []leanpoker.Player {
 	}
 	return activePlayers
 }
-func calculate(gameState *leanpoker.Game) bool {
+func Calculate(gameState *leanpoker.Game) bool {
 	activePlayers := getActivePlayers(&gameState.Players)
 	return len(activePlayers) == 2
 }

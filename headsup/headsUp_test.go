@@ -1,4 +1,4 @@
-package headsUp
+package headsup
 
 import (
 	"encoding/json"
