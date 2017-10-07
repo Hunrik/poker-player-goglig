@@ -1,19 +1,9 @@
 {
-	"ImportPath": "poker-player-goglig",
+	"ImportPath": "github.com/Hunrik/poker-player-goglig",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
-	"Deps": [
-		{
-			"ImportPath": "github.com/Hunrik/poker-player-goglig/leanpoker",
-			"Rev": "cfc6658a49a44f012cba91be555a3bf6cc8c149a"
-		},
-		{
-			"ImportPath": "github.com/Hunrik/poker-player-goglig/player",
-			"Rev": "cfc6658a49a44f012cba91be555a3bf6cc8c149a"
-		},
-		{
-			"ImportPath": "github.com/lean-poker/poker-player-go/leanpoker",
-			"Rev": "d8f83646f9389df5b4588c472accdfced18979e2"
-		}
-	]
+	"Packages": [
+		"./..."
+	],
+	"Deps": []
 }

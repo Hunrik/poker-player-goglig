@@ -5,7 +5,7 @@ import "github.com/Hunrik/poker-player-goglig/leanpoker"
 const VERSION = "0.0.1 Player"
 
 func BetRequest(state *leanpoker.Game) int {
-	return 0
+	return 10
 }
 
 func Showdown(state *leanpoker.Game) {
