@@ -1,11 +1,15 @@
 package player
 
-import "github.com/Hunrik/poker-player-goglig/leanpoker"
+import (
+	"math/rand"
 
-const VERSION = "High rollers 20"
+	"github.com/Hunrik/poker-player-goglig/leanpoker"
+)
+
+const VERSION = "High rollers lol"
 
 func BetRequest(state *leanpoker.Game) int {
-	return 20
+	return rand.Intn(100) + 100
 }
 
 func Showdown(state *leanpoker.Game) {
