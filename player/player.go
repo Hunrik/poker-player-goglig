@@ -12,7 +12,7 @@ import (
 const VERSION = "High rollers lol"
 
 func BetRequest(state *leanpoker.Game) int {
-	effectiveStack = effectiveStack.EffStack(state)
+	effectiveStack := effectiveStack.EffStack(state)
 	fmt.Println("Effective stack", effectiveStack)
 	return rand.Intn(100) + 100
 }
