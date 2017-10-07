@@ -63,13 +63,13 @@ func Convert(cards [2]leanpoker.Card) string {
 
 }
 
-type PreflopTable struct {
-	// Rank of the card. Possible values are numbers 2-10 and J,Q,K,A
-	Cards string `json:"cards"`
+// type PreflopTable struct {
+// 	// Rank of the card. Possible values are numbers 2-10 and J,Q,K,A
+// 	Cards string `json:"cards"`
 
-	// Suit of the card. Possible values are: clubs,spades,hearts,diamonds
-	Percentage float64 `json:"percentage"`
-}
+// 	// Suit of the card. Possible values are: clubs,spades,hearts,diamonds
+// 	Percentage float64 `json:"percentage"`
+// }
 
 func getFixture(path string) (table *[]PreflopTable, err error) {
 	raw, err := ioutil.ReadFile(path)
@@ -88,15 +88,15 @@ func getFixture(path string) (table *[]PreflopTable, err error) {
 
 func GetPercentage(cards [2]leanpoker.Card) float64 {
 	cardStr := Convert(cards)
-	preFlopTable, _ := getFixture("./preflop-table.json")
-	fmt.Println("%v", preFlopTable)
+	// preFlopTable, _ := getFixture("./preflop-table.json")
+	// fmt.Println("%v", preFlopTable)
 	// for i := 0; i < len(*preFlopTable); i++ {
 	// 	if preFlopTable[i].Cards == cardStr {
 	// 		return V.Percentage
 	// 	}
 	// 	// S[i].mark = "S"
 	// }
-	for _, v := range *preFlopTable {
+	for _, v := range PreflopTableArray {
 		if v.Cards == cardStr {
 			return v.Percentage
 		}
