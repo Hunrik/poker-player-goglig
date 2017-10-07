@@ -2,10 +2,10 @@ package player
 
 import "github.com/Hunrik/poker-player-goglig/leanpoker"
 
-const VERSION = "0.0.1 Player"
+const VERSION = "High rollers 20"
 
 func BetRequest(state *leanpoker.Game) int {
-	return 10
+	return 20
 }
 
 func Showdown(state *leanpoker.Game) {
