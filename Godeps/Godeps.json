@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/Hunrik/poker-player-goglig",
+	"ImportPath": "github.com/lean-poker/poker-player-go",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v74",
 	"Packages": [

@@ -1,6 +1,6 @@
 package player
 
-import "github.com/Hunrik/poker-player-goglig/leanpoker"
+import "github.com/lean-poker/poker-player-go/leanpoker"
 
 const VERSION = "0.0.1 Player"
 
