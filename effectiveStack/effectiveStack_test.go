@@ -30,7 +30,7 @@ func TestEffStack(t *testing.T) {
 	t.Run("Eff stack 1", func(t *testing.T) {
 		gameState, err := getFixture("./fixture-1.json")
 		assert.NoError(t, err, "read body")
-		fmt.Println(gameState)
+
 		resp := EffStack(gameState)
 		assert.Equal(t, float64(1010+320)/float64(20), resp)
 	})
