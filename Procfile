@@ -1,1 +1,1 @@
-web: poker-player-go
+web: poker-player-goglig
